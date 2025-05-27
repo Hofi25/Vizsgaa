@@ -1,0 +1,51 @@
+Linux Parancsok – Összefoglaló Jegyzet (Emelt szintű informatika érettségihez)
+
+1. Alap parancsok:
+ls – Könyvtár tartalmának listázása
+ls -l – Részletes (long) lista
+pwd – Jelenlegi könyvtár megjelenítése
+cd útvonal> – Könyvtárváltás
+cd .. – Visszalépés egy szintet
+
+2. Jogosultságok:
+chmod XXX fájl – Jogosultságok módosítása (pl. 755: rwxr-xr-x)
+7 = rwx (teljes jog), 5 = r-x, 4 = r-- stb.
+chown felhasználó:csoport fájl – Tulajdonos módosítása
+
+3. Fájlműveletek:
+cp fájl1 fájl2 – Másolás
+mv fájl1 fájl2 – Áthelyezés vagy átnevezés
+rm fájl – Törlés
+mkdir mappa – Könyvtár létrehozása
+touch fájl – Üres fájl létrehozása
+
+4. Szövegkezelés:
+cat fájl – Fájl tartalmának kiírása
+less fájl – Lapozható megtekintés
+grep 'kulcsszó' fájl – Kulcsszavas keresés fájlban
+head -n 10 fájl – Első 10 sor
+tail -n 10 fájl – Utolsó 10 sor
+
+5. Rendszerparancsok:
+sudo parancs – Parancs futtatása rendszergazdai joggal
+shutdown -h now – Azonnali leállítás
+reboot – Újraindítás
+ps aux – Folyamatok listázása
+top – Rendszerfolyamatok élő nézete
+
+6. Jogosultsági maszkok (chmod):
+0 = ---
+1 = --x
+2 = -w-
+4 = r--
+Összeadva (pl. 7 = rwx, 5 = r-x)
+
+7. Hasznos egyéb parancsok:
+man parancs – Kézikönyv megnyitása
+history – Előzmények listázása
+clear – Képernyő törlése
+df -h – Lemezhasználat emberbarát módon
+du -sh * – Könyvtárak mérete
+
+Tipp: A legtöbb parancs kombinálható opciókkal (pl. -l, -a stb.), nézd meg a man segítségével: man parancsnév
+
